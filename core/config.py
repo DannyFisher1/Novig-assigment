@@ -1,0 +1,30 @@
+"""Core service configuration."""
+
+# World generation
+SEED_HORSES = 100
+SEED_VENUES = 14
+
+# Race scheduling
+INITIAL_SCHEDULE_COUNT = 13
+MIN_SCHEDULED_RACES = 10
+RACE_START_INTERVAL_SECONDS = 10
+RACE_PARTICIPANTS = 6
+
+# Simulation
+RACE_TICK_SECONDS = 0.05
+
+# Replication
+EVENT_BUFFER_SIZE = 5000 # buffer size for the event streaming (50ms)
+MANAGER_HEARTBEAT_LOG_SECONDS = 15
+
+# Gameplay mechanics
+RAIN_BASE_SPEED_FACTOR = 0.8
+RAIN_TRACTION_BONUS = 0.2
+MUD_BASE_SPEED_FACTOR = 0.85
+MUD_TRACTION_BONUS = 0.1
+
+# Movement variance
+MOVE_VARIANCE_STDDEV = 0.05
+BURST_CHANCE = 0.1
+BURST_MULTIPLIER = 1.5
+MIN_MOVE = 0.1
