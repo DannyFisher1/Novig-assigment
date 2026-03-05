@@ -1,6 +1,4 @@
-# Horse Racing Simulation
-
-Novig Backend Engineer take-home submittion. 
+# Horse Racing Simulation - Novig Backend Assessment 
 
 ## Task
 
@@ -206,34 +204,6 @@ curl localhost:8001/metrics
 
 ---
 
-## Project Structure
-
-```
-core/                      # Authoritative state machine
-  app.py                   # FastAPI + lifespan + graceful shutdown
-  config.py                # Simulation constants
-  models.py                # Horse, Venue, RaceStatus models
-  seeding.py               # Random world generation
-  race_manager.py          # Orchestrates races + SSE broadcast
-  race_engine.py           # Single race simulation loop
-  routes.py                # HTTP endpoints
-  logic/
-    gameplay.py            # Movement + odds calculation
-    scheduling.py          # Race queue management
-
-replica/                   # Read-only follower
-  app.py                   # FastAPI + heartbeat loop
-  config.py                # CORE_URL and settings
-  subscriber.py            # SSE client + reconnect logic
-  state_store.py           # Local state + metrics
-  routes.py                # HTTP + SSE endpoints
-
-demo/
-  replica_demo.py          # Terminal UI demo
-```
-
----
-
 ## AI & Tools
 
 **Tools Used:**
@@ -266,5 +236,3 @@ demo/
 ```
 fastapi, uvicorn, httpx, httpx-sse, pydantic, rich, coolname
 ```
-
-# Novig-assigment
