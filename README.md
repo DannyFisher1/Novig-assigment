@@ -222,7 +222,7 @@ curl localhost:8001/metrics
 - httpx-sse integration for cleaner code
 - Market odds formula (variance decay model) 
 - Debugging: helping find various issues across the whole codebase
-- Demo page is mostly AI generated with me ensuring we are actually just hitting the correct endpoints and connecting t othe sse
+- Demo page is mostly AI generated with me ensuring we are actually just hitting the correct endpoints and connecting to the sse
 
 **Where I disagreed/steered differently:**
 
